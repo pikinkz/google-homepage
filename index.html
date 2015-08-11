@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Google</title>
-		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<title>Google home page</title>
+		<link href="css/reset.css" type="text/css" rel="stylesheet">
+		<link href="css/main.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- top right side of the page-->
-		<header id="nav">
-			<ul class="horizontal-list">
-				<li><a href="www.gmail.com">Gmail</a></li>
-				<li><a href="www.google.images.com">Images</a></li>
-				<li id="grid"><img scr="img/grid.png"></li>
-				<li><button name="button">Sign in</button></li>
-			</ul>
-		</header>
-		<!-- main container-->
-		<div class="search">
+			<header>
+				<ul>
+					<li>
+						<a href="google.com/signin"class="signIn">Sign in</a>
+					</li>
+					<li>
+						<a href="google.apps.com">
+							<img src="img/apps.png">
+						</a>
+					</li>
+					<li>
+						<a href="images.google.com">Images</a>
+					</li>
+					<li>
+						<a href="gmail.com">Gmail</a>
+					</li>
+				</ul>
+			</header>
+			<!-- main container-->
 			<!-- Google logo with search form-->
-			<div>
-				<div id="img">
-					<img src="img/Google.png">
-				</div>
-				<div>
-					<input type="text" name="input" value="type here">
-				</div>
-				<div>
-					<button name="button">Google search</button>
-					<button name="button">I'm feeling lucky</button>
+			<img id="logo" src="img/Google.png">
+			<div id="search">
+				<form action="#" method="post">
+					<input name="seacrh" type="search">
+				</form>
+				<div id="searchoptions">
+					<div class="button">Google search</div>
+					<div class="button">I'm feeling lucky</div>
 				</div>
 			</div>
 			<!--Language options-->
 			<div id="lang">
-				<div>Google.kz offered in:</div>
-				<ul class="horizontal-list">
-					<li><a href="https://www.google.kz/setprefs?sig=0_85Q5wpr-XRlPiIIJmnfhKfELGdY%3D&hl=kk&source=homepage">қазақ </a></li>
-					<li><a href="https://www.google.kz/setprefs?sig=0_85Q5wpr-XRlPiIIJmnfhKfELGdY%3D&hl=ru&source=homepage">русском</a></li>
-				</ul>
+				<p>Google.kz offered in:
+				<a href="https://www.google.kz/setprefs?sig=0_85Q5wpr-XRlPiIIJmnfhKfELGdY%3D&hl=kk&source=homepage">қазақ </a>
+				<a href="https://www.google.kz/setprefs?sig=0_85Q5wpr-XRlPiIIJmnfhKfELGdY%3D&hl=ru&source=homepage">русском</a>
+				</p>
 			</div>
-		</div>
-		<footer>
+			<footer>
 			<!--Bottom left links-->
-			<div class="bottom">
-				<ul class="horizontal-list">
-					<li>Advertising</li>
-					<li>Business</li>
-					<li>About</li>
-				</ul>
-			</div>
-			<!--Bottom right links-->
-			<div>
-				<ul class="horizontal-list">
-					<li>Privacy</li>
-					<li>Terms</li>
-					<li>Settings</li>
-					<li>Use Google.com</li>
-				</ul>
-			</div>
-		</footer>
+				<div>
+					<ul id="bottomLeft">
+						<li><a href="https://www.google.kz/intl/en/about.html?fg=1">About</a></li>
+						<li><a href="https://www.google.kz/services/?fg=1">Business</a></li>
+						<li><a href="https://www.google.kz/intl/en/ads/?fg=1">Advertising</a></li>
+					</ul>
+				</div>
+				<!--Bottom right links-->
+				<div>
+					<ul id="bottomRight">
+						<li><a href="https://www.google.com/?gws_rd=cr,ssl&ei=JZjJVYeLC4msswHm-47ABg&fg=1">Use Google.com</a></li>
+						<li><a href="https://www.google.kz/preferences?hl=en">Settings</a></li>
+						<li><a href="https://www.google.kz/intl/en/policies/terms/?fg=1">Terms</a></li>
+						<li><a href="https://www.google.kz/intl/en/policies/privacy/?fg=1">Privacy</a></li>
+					</ul>
+				</div>
+			</footer>
 	</body>
 </html>
